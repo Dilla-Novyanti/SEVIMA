@@ -23,8 +23,8 @@
                         </a>
                         <div id="collapse{{$pljrn->id}}" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                             <div class="bg-white py-2 collapse-inner rounded">
-                                <a class="collapse-item ml-4" href="#">Materi</a>
-                                <a class="collapse-item ml-4" href="#">Tugas</a>
+                                <a class="collapse-item ml-4" href="/materi/{{$pljrn->kode_pelajaran}}">Materi</h6><br/>
+                                <a class="collapse-item ml-4" href="/tugas/{{$pljrn->kode_pelajaran}}">Tugas</a>
                             </div>
                         </div>
                     </li>
