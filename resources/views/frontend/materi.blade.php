@@ -12,7 +12,7 @@
                 <div class="row">
                     <div class="col-1"> <img src="{{url('/img/icon-tugas.png')}}"> </div>
                     <div class="col-11" style="padding-left:10px;">
-                        <p>Materi       : <br/>
+                        <p>Materi       : {{$pljrn->nama_pelajaran}}<br/>
                             Pertemuan ke: <br/>
                             Diupload    : <br/>
                         </p>

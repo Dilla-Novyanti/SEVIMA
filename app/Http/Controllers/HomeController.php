@@ -3,14 +3,17 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Pelajaran;
 
 class HomeController extends Controller
 {
     public function index(){
-        return view("frontend.index");
+        $pelajaran = Pelajaran::all();
+        return view("frontend.index", compact("pelajaran",$pelajaran));
     }
 
-    public function manual(){
-        return view("frontend.manual");
+    public function materi($nama_pelajaran){
+        $pelajaran = Pelajaran::all();
+        return view("frontend.materi", compact("pelajaran",$pelajaran));
     }
 }

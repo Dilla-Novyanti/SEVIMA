@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\HomeController;
+use App\Http\Controllers\FrontController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,5 +17,6 @@ use App\Http\Controllers\HomeController;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::get('/', [HomeController::class, 'index']);
-Route::get('/home', [HomeController::class, 'manual']);
+Route::get('/', [FrontController::class, 'index']);
+Route::get('/materi/{kode_pelajaran}', [FrontController::class, 'materi']);
+// Route::get('/tugas/{$nama_pelajaran}', [FrontController::class, 'materi']);
