@@ -27,6 +27,15 @@
             background-color:#6E76CB;
             border-radius:15px;
         }
+        .box-moduls{
+            width:900px;
+            height:auto;
+            margin-left:50px;
+            margin-right:50px;
+            margin-top:40px;
+            border: solid 0.1px ;
+            border-radius:15px;
+        }
     </style>
   </head>
   <body>
@@ -76,8 +85,24 @@
             </div>
         </diV>
         <div class="col-9">
+            <!-- Tittle banner -->
             <div class="box">
-                <div>Web Design</div>
+                <div class="row">
+                    <div class="col-6 text-white" style="margin-top:100px;padding-left:45px;">Web Design</div>
+                    <div class="col-6 text-right text-white" style="margin-top:0px;padding-right:45px;">Materi</div>
+                </div>
+            </div>
+            <!-- content moduls -->
+            <div class="box-moduls">
+                <div class="row">
+                    <div class="col-1"> <img src="{{url('/img/icon-tugas.png')}}"> </div>
+                    <div class="col-11" style="padding-left:10px;">
+                        <p>Materi       : <br/>
+                            Pertemuan ke: <br/>
+                            Diupload    : <br/>
+                        </p>
+                    </div>
+                </div>
             </div>
         </diV>
     </div>
