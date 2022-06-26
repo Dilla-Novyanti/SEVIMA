@@ -20,9 +20,10 @@ class CreateTugasTable extends Migration
             $table->string("kode_materi");
             $table->string("kode_pelajaran");
             $table->string("pertemuan");
+            $table->string("type");
             $table->string("deskripsi");
             $table->string("file_path")->nullable();
-            $table->date("deadline");
+            $table->string("deadline");
             $table->timestamps();
             $table->softdeletes();
         });

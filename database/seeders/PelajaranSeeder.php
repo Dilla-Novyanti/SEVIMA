@@ -22,19 +22,19 @@ class PelajaranSeeder extends Seeder
         Pelajaran::create([
           "nama_pelajaran" => "Web Desiain",
           "kode_pelajaran" => "WD-X-19",
-          "kode_pengajar" => "A1345",
+          "kode_pengajar"  => "A1345",
         ]);
 
         Pelajaran::create([
           "nama_pelajaran" => "Matematika",
           "kode_pelajaran" => "MTK-X-19",
-          "kode_pengajar" => "A1987",
+          "kode_pengajar"  => "A1987",
           ]);
 
         Pelajaran::create([
         "nama_pelajaran" => "Teknik Kerja Bengkel",
         "kode_pelajaran" => "TK-2020-7B",
-        "kode_pengajar" => "B16254",
+        "kode_pengajar"  => "B16254",
         ]);
     }
 }

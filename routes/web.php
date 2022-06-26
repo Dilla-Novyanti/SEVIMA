@@ -19,4 +19,6 @@ use App\Http\Controllers\FrontController;
 // });
 Route::get('/', [FrontController::class, 'index']);
 Route::get('/materi/{kode_pelajaran}', [FrontController::class, 'materi']);
-// Route::get('/tugas/{$nama_pelajaran}', [FrontController::class, 'materi']);
+Route::get('/tugas/{kode_pelajaran}', [FrontController::class, 'tugas']);
+Route::post('/dropzone-store', [FrontController::class, 'dropzoneStore'])->name('dropzone.store');
+Route::post('/jawaban-store', [FrontController::class, 'jawabanStore'])->name('jawaban.store');
